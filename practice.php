@@ -1,16 +1,32 @@
 <?php
-$a=3;
-$b=7;
-echo $a+$b;
-
-$array_month=["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"];
-echo $array_month[7];
-
-$hello="Hello,";
 $name="haruna";
-$world="'s World!";
-echo "$hello$name$world";
+if($name=="haruna"){
+    echo "私は $name です。";
+}else{
+    echo "あなたの名前ではありません。";
+}
 
-$tech_boost="tech";
-$tech_boost.="_boost";
-echo $tech_boost;
+for($i=1;$i<10001;$i++){
+    echo $i;
+}
+
+
+$fruits=array("apple","orenge","banana","lemon","peach");
+
+foreach($fruits as $fruit){
+    echo "$fruit";
+    echo "\n";
+}
+
+
+$start = 1;
+
+$end = 100;
+++ $end ;
+
+for($i = $start; $i < $end; $i++){
+
+  if($i % 5 == 0){
+    echo $i;
+  }
+}
